@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InitApps</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+
+
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+
+                <div id="content">
+
+                    <div class="container-fluid m-0 p-0">
+                        <!-- Topbar -->
+                        <nav class="navbar navbar-expand navbar-light my-navbar d-flex justify-content-center mb-2 p-2">
+
+                            <!-- Topbar Search -->
+                            <form class="d-none d-sm-inline-block form-inline navbar-search">
+                                <div class="input-group">
+                                    <h3>Apps Organisations</h3>
+                                </div>
+                            </form>
+
+                        </nav>
+                        <!-- End of Topbar -->
+
+                        @RenderBody()
+                    </div>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+    </header>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+
+        $('#bar').click(function () {
+            $(this).toggleClass('open');
+            $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');
+
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

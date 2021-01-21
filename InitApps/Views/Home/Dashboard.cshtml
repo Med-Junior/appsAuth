@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <!-- Begin Page Content -->
+    <div class="container-fluid px-lg-4">
+        <div class="row">
+            <div class="col-md-12 mt-lg-4 mt-4">
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Demande Total</h5>
+                                <h1 class="display-5 mt-1 mb-3">2.382</h1>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body bg-success">
+                                <h5 class="card-title mb-4 text-white">Demande Accepte</h5>
+                                <h1 class="display-5 mt-1 mb-3">2.382</h1>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body bg-warning">
+                                <h5 class="card-title mb-4 text-white">Demande En Attente</h5>
+                                <h1 class="display-5 mt-1 mb-3">2.382</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body bg-danger">
+                                <h5 class="card-title mb-4 text-white">Demande Refuse</h5>
+                                <h1 class="display-5 mt-1 mb-3">$21.300</h1>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!-- column -->
+            <div class="col-md-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- title -->
+                        <div class="d-md-flex align-items-center">
+                            <div>
+                                <h4 class="card-title"></h4>
+                                <h5 class="card-subtitle">Les Demandes Recentes</h5>
+                            </div>
+                        </div>
+                        <!-- title -->
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table v-middle">
+                            <thead>
+                                <tr class="bg-light">
+                                    <th class="border-top-0">Date</th>
+                                    <th class="border-top-0">Organisation</th>
+                                    <th class="border-top-0">Affiliation</th>
+                                    <th class="border-top-0">Etat</th>
+                                    <th class="border-top-0">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a class="btn btn-circle btn-info text-white">EA</a></div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Elite Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td><a asp-controller="Home" asp-action="DetailDemande"><button type="button" class="btn btn-primary">Consulter</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a class="btn btn-circle btn-orange text-white">MA</a></div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Monster Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td><a asp-controller="Home" asp-action="DetailDemande"><button type="button" class="btn btn-primary">Consulter</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a class="btn btn-circle btn-success text-white">MP</a></div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Material Pro Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td><a asp-controller="Home" asp-action="DetailDemande"><button type="button" class="btn btn-primary">Consulter</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a class="btn btn-circle btn-purple text-white">AA</a></div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Ample Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td><a asp-controller="Home" asp-action="DetailDemande"><button type="button" class="btn btn-primary">Consulter</button></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="m-r-10"><a class="btn btn-circle btn-orange text-white">TA</a></div>
+                                            <div class="">
+                                                <h4 class="m-b-0 font-16">Test Admin</h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">Single use</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 font-16">John Doe</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="mb-2 mt-2 text-warning font-16">En Attente</h4>
+                                    </td>
+                                    <td><a asp-controller="Home" asp-action="DetailDemande"><button type="button" class="btn btn-primary">Consulter</button></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>

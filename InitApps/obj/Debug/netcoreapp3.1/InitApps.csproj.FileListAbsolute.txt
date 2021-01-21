@@ -17,7 +17,6 @@ L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.RazorAssembly
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.TagHelpers.input.cache
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.TagHelpers.output.cache
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.RazorCoreGenerate.cache
-L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -108,4 +107,12 @@ L:\Applications\InitApps\InitApps\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.Code
 L:\Applications\InitApps\InitApps\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.csproj.CoreCompileInputs.cache
 L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\InitApps.MvcApplicationPartsAssemblyInfo.cache
-L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Shared\DemandeInfo.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListeDemande.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Home\DetailDemande.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Authentification\ForgotPassword.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Authentification\Login.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Authentification\Register.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Authentification\RegisterConfirm.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Authentification\ResetPassword.cshtml.g.cs
+L:\Applications\InitApps\InitApps\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutNotLogged.cshtml.g.cs

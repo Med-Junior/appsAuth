@@ -20,9 +20,16 @@ namespace InitApps.Controllers
 
         public IActionResult Index()
         {
+            return View("Dashboard");
+        }
+        public IActionResult ListeDemande()
+        {
             return View();
         }
-
+        public IActionResult DetailDemande()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
