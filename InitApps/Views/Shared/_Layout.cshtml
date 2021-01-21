@@ -28,19 +28,19 @@
                             Pages
                         </li>
                         <li class="">
-                            <a class="nav-link text-left active" role="button" aria-haspopup="true" aria-expanded="false"
+                            <a class="nav-link text-left @ViewData["Dashboard"]" role="button" aria-haspopup="true" aria-expanded="false"
                                 asp-controller="Home" asp-action="Index">
                                 <i class="flaticon-bar-chart-1 active"></i> Dashboard
                             </a>
                         </li>
                         <li class="">
-                            <a class="nav-link text-left" role="button" aria-haspopup="true" aria-expanded="false"
+                            <a class="nav-link text-left @ViewData["ListeDemande"]" role="button" aria-haspopup="true" aria-expanded="false"
                                 asp-controller="Home" asp-action="ListeDemande">
                                 <i class="flaticon-bar-chart-1"></i> Demandes Liste
                             </a>
                         </li>
                         <li class="">
-                            <a class="nav-link text-left" role="button" aria-haspopup="true" aria-expanded="false"
+                            <a class="nav-link text-left @ViewData["DetailDemande"]" role="button" aria-haspopup="true" aria-expanded="false"
                                 asp-controller="Home" asp-action="DetailDemande">
                                 <i class="flaticon-bar-chart-1"></i> Demandes Detail
                             </a>
@@ -76,7 +76,9 @@
                             <!-- Topbar Search -->
                             <form class="d-none d-sm-inline-block form-inline navbar-search">
                                 <div class="input-group">
-                                    <h3>Apps Organisations</h3>
+                                    <a style="color: black" asp-controller="Home" asp-action="Index">
+                                        <h3 class="align-middle">Apps Organization</h3>
+                                    </a>
                                 </div>
                             </form>
 
@@ -160,8 +162,25 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">Vishweb Design</span>
-                                        <img class="img-profile rounded-circle" src="img/logo3.png">
+                                        <img class="img-profile rounded-circle" src="~/img/logo3.png">
                                     </a>
+
+                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="userDropdown">
+                                        <div class="list-group">
+                                            <a asp-controller="Authentification" asp-action="Login" style="color: black" class="list-group-item">
+                                                <div class="row no-gutters align-items-end">
+
+                                                    <div class="col-9 d-flex justify-content-end mr-2">
+                                                        Log Out
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle text-danger"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -184,7 +203,10 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
-
+        $(function () {
+            let dd = "@ViewData["Title"]"
+                console.log(dd)
+        })
         $('#bar').click(function () {
             $(this).toggleClass('open');
             $('#page-content-wrapper ,#sidebar-wrapper').toggleClass('toggled');

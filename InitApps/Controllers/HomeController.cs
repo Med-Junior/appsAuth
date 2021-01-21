@@ -20,14 +20,17 @@ namespace InitApps.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Dashboard"] = " active";
             return View("Dashboard");
         }
         public IActionResult ListeDemande()
         {
+            ViewData["ListeDemande"] = " active";
             return View();
         }
         public IActionResult DetailDemande()
         {
+            ViewData["DetailDemande"] = " active";
             return View();
         }
         public IActionResult Privacy()
