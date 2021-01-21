@@ -1,1 +1,11 @@
-<p align="center"><h1 class="display-4">Welcome</h1><p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> <h1 class="d-flex justify-content-center align-items-center text-primary" >HELLO WORLD</h1></p>
+<h1 align="center">
+    Welcome
+</h1>
+<p align="center">
+Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>
+</p>
+<h3 align="center">
+    HELLO WORLD .NetCore
+</h3>
+
+## appsAuth
